@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.slab1.HelloController">
+   <children>
+      <Label layoutX="103.0" layoutY="115.0" prefHeight="34.0" prefWidth="102.0" text="Быстрый подъем" />
+      <Label layoutX="233.0" layoutY="115.0" prefHeight="34.0" prefWidth="102.0" text="Средний подъем" />
+      <Label layoutX="353.0" layoutY="115.0" prefHeight="34.0" prefWidth="130.0" text="Неизменное состояние" />
+      <Label layoutX="493.0" layoutY="115.0" prefHeight="34.0" prefWidth="59.0" text="Спад" />
+      <Label layoutX="34.0" layoutY="149.0" prefHeight="34.0" prefWidth="69.0" text="Облигации" />
+      <Label layoutX="34.0" layoutY="183.0" prefHeight="34.0" prefWidth="69.0" text="Акции" />
+      <Label layoutX="34.0" layoutY="220.0" prefHeight="34.0" prefWidth="69.0" text="Депозит" />
+      <Text layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имеются три альтернативы: купить облигации, купить акции предприятия или положить  деньги в банк на депозит. Результат каждого  из действий зависит от четырех возможных  состояний экономики в течение года: быстрый подъем, средний подъем, неизменное состояние и спад. В таблице представлен ожидаемый доход (в процентах от вложенного капитала) для каждого действия в зависимости от состояния экономики:" textAlignment="CENTER" underline="true" wrappingWidth="551.470043182373" />
+      <TextField fx:id="OblBs" layoutX="111.0" layoutY="154.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AcsBs" layoutX="111.0" layoutY="187.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="DepBs" layoutX="111.0" layoutY="224.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="OblSs" layoutX="233.0" layoutY="154.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AcsSs" layoutX="233.0" layoutY="187.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="DepSs" layoutX="233.0" layoutY="224.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="OblNz" layoutX="353.0" layoutY="154.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AcsNz" layoutX="353.0" layoutY="187.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="DepNz" layoutX="353.0" layoutY="224.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="OblSpad" layoutX="472.0" layoutY="154.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AcsSpad" layoutX="472.0" layoutY="187.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="DepSpad" layoutX="472.0" layoutY="224.0" prefHeight="25.0" prefWidth="102.0" />
+      <Button fx:id="BtMax" layoutX="25.0" layoutY="271.0" mnemonicParsing="false" onAction="#calculateMax" prefHeight="34.0" prefWidth="88.0" text="Максимум" />
+      <Button fx:id="BtWalda" layoutX="25.0" layoutY="312.0" mnemonicParsing="false" onAction="#calculateValda" prefHeight="34.0" prefWidth="88.0" text="Вальда" />
+      <Button fx:id="BtGurwez" layoutX="25.0" layoutY="352.0" mnemonicParsing="false" onAction="#calculateGz" prefHeight="34.0" prefWidth="88.0" text="Гурвица" />
+      <TextField fx:id="AnsMax" layoutX="154.0" layoutY="275.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AnsWalda" layoutX="154.0" layoutY="316.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AnsGurwez" layoutX="154.0" layoutY="356.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text fx:id="TextAnswerMax" layoutX="284.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.8033142089844" />
+      <Text fx:id="TextAnswerWalda" layoutX="284.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.8033142089844" />
+      <Text fx:id="TextAnswerGz" layoutX="284.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.8033142089844" />
+      <Button fx:id="BtSavidg" layoutX="25.0" layoutY="392.0" mnemonicParsing="false" onAction="#calculateSavidg" prefHeight="34.0" prefWidth="88.0" text="Сэвиджа" />
+      <Button fx:id="BtLaplasa" layoutX="25.0" layoutY="432.0" mnemonicParsing="false" onAction="#calculateLaplasa" prefHeight="34.0" prefWidth="88.0" text="Лапласа" />
+      <TextField fx:id="AnsSavidg" layoutX="154.0" layoutY="396.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="AnsLaplasa" layoutX="154.0" layoutY="436.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text fx:id="TextAnswerSavidg" layoutX="290.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.8033142089844" />
+      <Text fx:id="TextAnswerLaplasa" layoutX="290.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.8033142089844" />
+   </children>
+</AnchorPane>
